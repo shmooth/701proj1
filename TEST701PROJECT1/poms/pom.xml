@@ -10,6 +10,7 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
+    <module>jobs/process/twebservice_test_on_tac_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TEST701PROJECT1</talend.project.name>
