@@ -205,6 +205,22 @@
       <elementValue elementRef="PARAPARENT" value=""/>
       <elementValue elementRef="PARAMETERARRAYSIZE" value=""/>
       <elementValue elementRef="PARAMETERINDEX" value=""/>
+      <elementValue elementRef="EXPRESSION" value="parameters.AddResult"/>
+      <elementValue elementRef="COLUMN" value="result"/>
+      <elementValue elementRef="SOURCE" value=""/>
+      <elementValue elementRef="ELEMENT" value=""/>
+      <elementValue elementRef="PARAMETERINFO" value=""/>
+      <elementValue elementRef="PARAPARENT" value=""/>
+      <elementValue elementRef="PARAMETERARRAYSIZE" value=""/>
+      <elementValue elementRef="PARAMETERINDEX" value=""/>
+      <elementValue elementRef="EXPRESSION" value=""/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="SOURCE" value="parameters.AddResult"/>
+      <elementValue elementRef="ELEMENT" value=""/>
+      <elementValue elementRef="PARAMETERINFO" value=""/>
+      <elementValue elementRef="PARAPARENT" value=""/>
+      <elementValue elementRef="PARAMETERARRAYSIZE" value=""/>
+      <elementValue elementRef="PARAMETERINDEX" value=""/>
       <elementValue elementRef="EXPRESSION" value=""/>
       <elementValue elementRef="COLUMN" value=""/>
       <elementValue elementRef="SOURCE" value=""/>
@@ -225,10 +241,12 @@
     <elementParameter field="DIRECTORY" name="TMPPATH" value=""/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWebService_1">
-      <column comment="" defaultValue="" key="false" length="-1" name="arg1" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="arg2" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="arg1" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="arg2" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
-    <metadata connector="OUTPUT" name="OUTPUT"/>
+    <metadata connector="OUTPUT" name="OUTPUT">
+      <column comment="" key="false" length="-1" name="result" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
@@ -250,6 +268,11 @@
     <metadata connector="FLOW" name="tLogRow_1"/>
   </node>
   <connection connectorName="OUTPUT" label="row1" lineStyle="0" metaname="OUTPUT" offsetLabelX="0" offsetLabelY="0" source="tWebService_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="result"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
@@ -258,13 +281,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ef979f6e-8629-41d3-bda4-efccc4f657c4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Kxg722P2JcjyO1S1pBM7MPh8fTyK9LLUVZmuXUbXSvWXT3gJl0QivZmxRaGFDJ+6swZdb0Fp715d
-z1rvQ2beHA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ccdbef7f-a1f1-4924-a299-ce6d4cd2937d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VYy3R3QQ5pY25fHKCF7Zcj42NJNlnHVK9Gj0tDEQFqfcgvW7gAwJs0LstPFUnFp2BDo0DhRCfaPi
-1KKSVt6Jtg==</DigestValue></Reference></SignedInfo><SignatureValue>mxS9054nKk8HSlO0Vp/LcRoBG59vRnk+X8DnTraNsErTLgLgrLsZqDVZkTVS/bzXtikyGcOSEyFc
-2hRCl5RMU2vRd+ch8Vi8rdyLQEJp4gAYlgmf+FswcXhbrgIhYb7IJmj3mIFHR9oNiGUO5K+tIx/x
-Iyw68c27ifn+vlrMBxgi1C2oOzl+6GAqCV0vrrfSbh3Yx8cYn2nnK6ennQeZnejXLSfBa8XPgPF6
-szVypPZn6GxBaco5iZsfUdVaTY0ERZ/+7CPf6rwicRLNSZ3HAxVW5ctlTlZVrKM+ojFI8wIecD47
-e38FahRzLPKyt8bBvyMESYnLsJUb2+WeK7fLVA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_878aa09c-e15a-4bea-a508-252c12aada34"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YG9Ox8CSDFJt3VhTkXVNAhFjyA9xuo3DwZA+ERMBgoU6+NpP05rI4+4lJQEs4r+7Dp7SR5DDaSM+
+bPJ1mUGcVA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_178fee3b-0237-48b7-bdb2-80fc2adbf077"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9iPI/Kbs5WIey78x8sUpyw7zzP7g7AQwXkJ9GP+sxolPmM1piriScxwhxLufI3RNxDCsEPpTUNB0
+yMwat8QIrg==</DigestValue></Reference></SignedInfo><SignatureValue>HUjJmufBZQMLLWm8HQIAexs4SLC+redBoDMISGRP+fGHs64bj79M9540gqLLAhwXP6lR8XcplKYU
+Z3Sx1joq0DCfBy6sLNrM4gqh5lRgUz+S0ADKp9gcNFGdtiPTdemsp/sshGnej66JSZ4Z3VMmPdht
+jV3NmXuE44RbOaQf/bUQtRiKH6ElRPufE77PoHvysfjw4H/QrJmL9bWDedLa3VrQOpFcpakYVeHc
+mCHzIFvQkc6ABo4TKuimFBkHm4wOPIR4TBd7HgaJyiYeWt8IHuo06D5G3hHwuQ7AiL/M4vL41t6V
+WgxZGoDbJrq4eh0M1nCNATpiuBn5Wc9KN6oALw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -288,4 +311,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ccdbef7f-a1f1-4924-a299-ce6d4cd2937d" Target="#_ef979f6e-8629-41d3-bda4-efccc4f657c4"><Timestamp>2018-09-06 18:37:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_178fee3b-0237-48b7-bdb2-80fc2adbf077" Target="#_878aa09c-e15a-4bea-a508-252c12aada34"><Timestamp>2018-09-06 18:38:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
