@@ -1,0 +1,511 @@
+package routines;
+//import java.util.Collection;
+
+import com.amazonaws.auth.*;
+import com.amazonaws.services.elasticmapreduce.*;
+import com.amazonaws.services.elasticmapreduce.model.*;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class AmazonEMR {
+
+    /**
+     * getPublicIPAddr: attempt to find the Public IP Address of the master cluster node.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} AmazonEMR
+     * 
+     * {param} string("emrId") input: emrID as output from tAmazonEMRManage component (global).
+     * {param} string("region") input: AWS region that supports EMR.
+     * {param} string("access_key") input: Your Amazon access key.
+     * {param} string("secret_key") input: Your Amazon secret key.
+     * 
+     * {example} getPublicIPAddr("j-12345ga4gs", "user@company.com", "XXXXXXXXXXX") # "10.10.0.53"
+     *
+     */
+    public static String getPublicIPAddr(String emrId, String region, String access_key, String secret_key) {
+    	
+    	AWSCredentials awsCred = new BasicAWSCredentials(
+    							access_key,
+    							secret_key);
+
+    	AmazonElasticMapReduceClient emr = new AmazonElasticMapReduceClient(awsCred);
+    	//AmazonElasticMapReduceClientBuilder.standard().withCredentials(new AWSStaticCredentialsProvider(awsCred)).build();
+    	
+    	
+    	emr.setEndpoint(getEndPoint(region));
+
+    	Cluster cluster = emr.describeCluster(new DescribeClusterRequest().withClusterId(emrId)).getCluster();
+
+    	ListInstancesResult instances = emr.listInstances(new ListInstancesRequest().withClusterId(emrId));
+
+    	String masterDnsName = cluster.getMasterPublicDnsName();
+    	//System.out.println("***** Master Public DNS: " + masterDnsName);
+
+    	for (Instance instance : instances.getInstances()) {
+    	     if (instance.getPublicDnsName().equals(masterDnsName)) {
+    	      	return instance.getPublicIpAddress();
+    	     }
+    	}
+   	    return("Failed to find master node public ip.");
+
+    }
+    /**
+     * getPrivateIPAddr: attempt to find the Private IP Address of the master cluster node.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} AmazonEMR
+     * 
+     * {param} string("emrId") input: emrID as output from tAmazonEMRManage component (global).
+     * {param} string("region") input: AWS region that supports EMR.
+     * {param} string("access_key") input: Your Amazon access key.
+     * {param} string("secret_key") input: Your Amazon secret key.
+     * 
+     * {example} getPublicIPAddr("j-12345ga4gs", "user@company.com", "XXXXXXXXXXX") # "10.10.0.53"
+     *
+     */
+    public static String getPrivateIPAddr(String emrId, String region, String access_key, String secret_key) {
+    	
+    	AWSCredentials awsCred = new BasicAWSCredentials(
+    							access_key,
+    							secret_key);
+
+    	AmazonElasticMapReduceClient emr = 
+    	new AmazonElasticMapReduceClient(awsCred);
+    	emr.setEndpoint(getEndPoint(region));
+
+    	Cluster cluster = emr.describeCluster(new DescribeClusterRequest().withClusterId(emrId)).getCluster();
+
+    	ListInstancesResult instances = emr.listInstances(new ListInstancesRequest().withClusterId(emrId));
+
+    	String masterDnsName = cluster.getMasterPublicDnsName();
+    	//System.out.println("***** Master Public DNS: " + masterDnsName);
+
+    	for (Instance instance : instances.getInstances()) {
+    	     if (instance.getPublicDnsName().equals(masterDnsName)) {
+    	      	return instance.getPrivateIpAddress();
+    	     }
+    	}
+   	    return("Failed to find master node private ip.");
+
+    }
+    /**
+     * getPublicDNS: attempt to find the Public IP Address of the master cluster node.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} AmazonEMR
+     * 
+     * {param} string("emrId") input: emrID as output from tAmazonEMRManage component (global).
+     * {param} string("region") input: AWS region that supports EMR.
+     * {param} string("access_key") input: Your Amazon access key.
+     * {param} string("secret_key") input: Your Amazon secret key.
+     * 
+     * {example} getPublicDNS("j-12345ga4gs", "user@company.com", "XXXXXXXXXXXX") # "ec2-10-0-4-72.us-west-2.compute.amazonaws.com"
+     *
+     */
+    public static String getPublicDNS(String emrId, String region, String access_key, String secret_key) {
+    	
+    	AWSCredentials awsCred = new BasicAWSCredentials(
+    							access_key,
+    							secret_key);
+
+    	AmazonElasticMapReduceClient emr = new AmazonElasticMapReduceClient(awsCred);
+    	emr.setEndpoint(getEndPoint(region));
+    	
+    	//AmazonElasticMapReduceClient emr1 =  AmazonElasticMapReduceClient(AmazonElasticMapReduceClientBuilder.standard().withCredentials(new AWSStaticCredentialsProvider(awsCredentials)).build());
+
+    	Cluster cluster = emr.describeCluster(new DescribeClusterRequest().withClusterId(emrId)).getCluster();
+    	//System.out.println("Cluster = " + cluster.toString());
+    	//System.out.println("\n\nEC2:  " + cluster.getEc2InstanceAttributes().toString());
+    	//ListInstancesResult instances = emr.listInstances(new ListInstancesRequest().withClusterId(emrId));
+
+    	//return cluster.getMasterPublicDnsName();
+    	return cluster.getMasterPublicDnsName();
+    	
+    	//return ("temp until get masater public dns works");
+    	
+    }
+    /**
+     * getEMRPrivateHosts: attempt to build strings necessary for the Studio workstation's hosts file for the AWS private cluster IP/Hostnames.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} AmazonEMR
+     * 
+     * {param} string("emrId") input: emrID as output from tAmazonEMRManage component (global).
+     * {param} string("region") input: AWS region that supports EMR.
+     * {param} string("access_key") input: Your Amazon access key.
+     * {param} string("secret_key") input: Your Amazon secret key.
+     * 
+     * {example} getEMRHosts("j-12345ga4gs", "user@company.com", "XXXXXXXXXXXX") # "ec2-10-0-4-72.us-west-2.compute.amazonaws.com"
+     *
+     */
+    public static String getEMRPrivateHosts(String emrId, String region, String access_key, String secret_key) {
+    	
+    	AWSCredentials awsCred = new BasicAWSCredentials(
+				access_key,
+				secret_key);
+
+    	AmazonElasticMapReduceClient emr = 
+    			new AmazonElasticMapReduceClient(awsCred);
+    	emr.setEndpoint(getEndPoint(region));
+
+     	ListInstancesResult instances = emr.listInstances(new ListInstancesRequest().withClusterId(emrId));
+
+     	String hosts = "";
+
+    	for (Instance instance : instances.getInstances()) {
+    		
+    		hosts += instance.getPrivateIpAddress();
+    		hosts += "\t\t";
+    		hosts += instance.getPrivateDnsName().substring(0, instance.getPrivateDnsName().indexOf("."));
+    		hosts += "\t";
+    		hosts += instance.getPrivateDnsName();
+    		//hosts += "\t";
+    		//hosts += instance.getPublicDnsName();
+    		hosts += "\n";
+    	}
+   	
+    	return hosts;
+    	
+    }
+    /**
+     * getEMRTalendPrivateHosts: attempt to build strings necessary for an Edge Node's /etc/hosts file for the AWS private cluster IP/Hostnames.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} AmazonEMR
+     * 
+     * {param} string("emrId") input: emrID as output from tAmazonEMRManage component (global).
+     * {param} string("region") input: AWS region that supports EMR.
+     * {param} string("access_key") input: Your Amazon access key.
+     * {param} string("secret_key") input: Your Amazon secret key.
+     * 
+     * {example} getEMRHosts("j-12345ga4gs", "user@company.com", "XXXXXXXXXXXX") # "ec2-10-0-4-72.us-west-2.compute.amazonaws.com"
+     *
+     */
+    public static String getEMRTalendPrivateHosts(String emrId, String region, String access_key, String secret_key) {
+    	
+    	AWSCredentials awsCred = new BasicAWSCredentials(
+				access_key,
+				secret_key);
+
+    	AmazonElasticMapReduceClient emr = 
+    			new AmazonElasticMapReduceClient(awsCred);
+    	emr.setEndpoint(getEndPoint(region));
+
+    	//Cluster cluster = emr.describeCluster(new DescribeClusterRequest().withClusterId(emrId)).getCluster();
+
+    	ListInstancesResult instances = emr.listInstances(new ListInstancesRequest().withClusterId(emrId));
+
+    	//String masterDnsName = cluster.getMasterPublicDnsName();
+    	//System.out.println("***** Master Public DNS: " + masterDnsName);
+
+    	String hosts = "";
+    	for (Instance instance : instances.getInstances()) {
+    		
+    		hosts += instance.getPublicIpAddress();
+    		hosts += "\t";
+    		hosts += instance.getPrivateDnsName().substring(0, instance.getPrivateDnsName().indexOf("."));
+    		hosts += "\t";
+    		hosts += instance.getPrivateDnsName();
+    		//hosts += "\t";
+    		//hosts += instance.getPublicDnsName();
+    		hosts += "\n";
+    	}
+   	
+    	return hosts;
+    	
+    }
+    /**
+     * getEMRPublicHosts: attempt to build strings necessary for the Studio workstation's hosts file for the AWS public cluster IP/Hostnames.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} AmazonEMR
+     * 
+     * {param} string("emrId") input: emrID as output from tAmazonEMRManage component (global).
+     * {param} string("region") input: AWS region that supports EMR.
+     * {param} string("access_key") input: Your Amazon access key.
+     * {param} string("secret_key") input: Your Amazon secret key.
+     * 
+     * {example} getEMRHosts("j-12345ga4gs", "user@company.com", "XXXXXXXXXXXX") # "ec2-10-0-4-72.us-west-2.compute.amazonaws.com"
+     *
+     */
+    public static String getEMRPublicHosts(String emrId, String region, String access_key, String secret_key) {
+    	
+    	AWSCredentials awsCred = new BasicAWSCredentials(
+				access_key,
+				secret_key);
+
+    	AmazonElasticMapReduceClient emr = 
+    			new AmazonElasticMapReduceClient(awsCred);
+    	emr.setEndpoint(getEndPoint(region));
+
+    	//Cluster cluster = emr.describeCluster(new DescribeClusterRequest().withClusterId(emrId)).getCluster();
+
+    	ListInstancesResult instances = emr.listInstances(new ListInstancesRequest().withClusterId(emrId));
+
+    	//String masterDnsName = cluster.getMasterPublicDnsName();
+    	//System.out.println("***** Master Public DNS: " + masterDnsName);
+
+    	String hosts = "";
+    	
+    	for (Instance instance : instances.getInstances()) {
+    		
+    		hosts += instance.getPublicIpAddress();
+    		hosts += "\t";
+    		hosts += instance.getPublicDnsName();
+    		hosts += "\n";
+    	}
+    	return hosts;
+    	
+    }
+    /**
+     * getAmazonEMRInfo: Get List of EMR ID's, clusterName and statis for user in a region.
+     * 
+     * 
+     * {talendTypes} void
+     * 
+     * {Category} AmazonEMR
+     * 
+     * {param} string("region") input: AWS region that supports EMR.
+     * {param} string("access_key") input: Your Amazon access key.
+     * {param} string("secret_key") input: Your Amazon secret key.
+     * 
+     * {example} getAmazonEMRInfo("us-west", "user@company.com", "XXXXXXXXXXXX") # "ec2-10-0-4-72.us-west-2.compute.amazonaws.com"
+     *
+     */
+    public static void getAmazonEMRInfo( String region, String access_key, String secret_key) {
+    	AWSCredentials credentials;
+    	credentials = new BasicAWSCredentials(access_key, secret_key);
+
+    	AmazonElasticMapReduceClient emrClient;
+    	emrClient = new AmazonElasticMapReduceClient(credentials);
+    	emrClient.setEndpoint(getEndPoint(region));
+
+     	ListClustersResult res;
+    	//res = emrClient.listClusters(req);
+    	res = emrClient.listClusters();
+
+    	int size  = res.getClusters().size();
+
+    	System.out.println("***************** CLUSTER LIST ***************");
+    	System.out.println("*** Size: " + size);
+
+    	for(int i = 0 ; i < size; i++){           
+    		String clusterID = res.getClusters().get(i).getId();
+    		String clusterName = res.getClusters().get(i).getName();
+    		String clusterStatus = res.getClusters().get(i).getStatus().getState();
+    		System.out.println(">>> Cluster: " + clusterID + " clusterName: " + clusterName + " Status: " + clusterStatus);    
+    	}
+    }
+    private static String getEndPoint(String region) {
+    	String endPoint;
+    	switch (region) {
+            case "us-east-1":
+    			endPoint = "elasticmapreduce.us-east-1.amazonaws.com";
+    			break;
+    		case "us-west-1":
+    			endPoint = "elasticmapreduce.us-west-1.amazonaws.com";
+    			break;
+    		case "us-west-2":
+    			endPoint = "elasticmapreduce.us-west-2.amazonaws.com";
+    			break;
+    		case "eu-west-1":	
+    			endPoint = "elasticmapreduce.eu-west-1.amazonaws.com";
+    			break;
+    		case "eu-central-1":	
+    			endPoint = "elasticmapreduce.eu-central-1.amazonaws.com";
+    			break;
+    		case "ap-northeast-1":	
+    			endPoint = "elasticmapreduce.ap-northeast-1.amazonaws.com";
+    			break;
+    		case "ap-northeast-2":	
+    			endPoint = "elasticmapreduce.ap-northeast-2.amazonaws.com";
+    			break;
+    		case "ap-southeast-1":
+    			endPoint = "elasticmapreduce.ap-southeast-1.amazonaws.com";
+    			break;
+    		case "ap-southeast-2":	
+    			endPoint = "elasticmapreduce.ap-southeast-2.amazonaws.com";
+    			break;
+    		case "sa-east-1":	
+    			endPoint = "elasticmapreduce.sa-east-1.amazonaws.com";
+    			break;
+    		default:
+    			endPoint = "";
+    	}
+    	return endPoint;
+    	}
+    /**
+     * addTag: Adds a Tag to an EMR Cluster.
+     * 
+     * 
+     * {talendTypes} void
+     * 
+     * {Category} AmazonEMR
+     * 
+     * {param} string("emrId") input: emrID as output from tAmazonEMRManage component (global).
+     * {param} string("region") input: AWS region that supports EMR.
+     * {param} string("access_key") input: Your Amazon access key.
+     * {param} string("secret_key") input: Your Amazon secret key.
+     * {param} string("key") input: Tag key value.
+     * {param} string("value") input: Tag value.
+     * 
+     * {example} addTag("us-west", "user@company.com", "XXXXXXXXXXXX", "j-121345987654", "Owner", "tdye@talend.com") 
+     *
+     */
+	public static void addTag(String emrId, String region, String access_key, String secret_key, String key, String value) {
+		AWSCredentials credentials;
+    	credentials = new BasicAWSCredentials(access_key, secret_key);
+
+    	AmazonElasticMapReduceClient emrClient;
+    	emrClient = new AmazonElasticMapReduceClient(credentials);
+    	emrClient.setEndpoint(getEndPoint(region));
+    	
+    	AddTagsRequest atr = new AddTagsRequest(emrId);
+    	Tag t = new Tag(key, value);
+    	
+    	atr.withTags(t);
+    	emrClient.addTags(atr);
+    	return;
+	}
+	/**
+     * getTags: Lists tags for an EMR Cluster.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} AmazonEMR
+     * 
+     * {param} string("emrId") input: emrID as output from tAmazonEMRManage component (global).
+     * {param} string("region") input: AWS region that supports EMR.
+     * {param} string("access_key") input: Your Amazon access key.
+     * {param} string("secret_key") input: Your Amazon secret key.
+     * 
+     * {example} getTags( "j-121345987654", "us-west", "user@company.com", "XXXXXXXXXXXX") 
+     *
+     */
+	public static String getTags(String emrId, String region, String access_key, String secret_key) {
+		AWSCredentials credentials;
+    	credentials = new BasicAWSCredentials(access_key, secret_key);
+
+    	AmazonElasticMapReduceClient emrClient;
+    	emrClient = new AmazonElasticMapReduceClient(credentials);
+    	emrClient.setEndpoint(getEndPoint(region));
+    	
+    	//AddTagsRequest atr = new AddTagsRequest(emrId);
+    	
+    	    	
+    	DescribeClusterRequest dcr = new DescribeClusterRequest();
+    	dcr.setClusterId(emrId);
+    	
+    	DescribeClusterResult dc = new DescribeClusterResult();
+    	dc = emrClient.describeCluster(dcr);
+    	
+    	Cluster c = dc.getCluster();
+    	//Collection<Tag> tc = c.getTags();
+    	
+    	return c.getTags().toString();
+
+	}
+	/**
+     * getInstanceSecurityGroups: Lists Security Groups for all instances in an EMR Cluster.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} AmazonEMR
+     * 
+     * {param} string("emrId") input: emrID as output from tAmazonEMRManage component (global).
+     * {param} string("region") input: AWS region that supports EMR.
+     * {param} string("access_key") input: Your Amazon access key.
+     * {param} string("secret_key") input: Your Amazon secret key.
+     * 
+     * {example} getInstanceSecurityGroups( "j-121345987654", "us-west", "user@company.com", "XXXXXXXXXXXX") 
+     *
+     */
+	public static String getInstanceSecurityGroups(String emrId, String region, String access_key, String secret_key) {
+		AWSCredentials credentials;
+    	credentials = new BasicAWSCredentials(access_key, secret_key);
+
+    	AmazonElasticMapReduceClient emrClient;
+    	emrClient = new AmazonElasticMapReduceClient(credentials);
+    	emrClient.setEndpoint(getEndPoint(region));
+    	
+
+    	
+    	
+    	System.out.println("\n\nInstanceGroups:     " + emrClient.listInstanceGroups(new ListInstanceGroupsRequest().withClusterId(emrId)).toString());
+    	
+  	
+    	DescribeClusterRequest dcr = new DescribeClusterRequest();
+    	dcr.setClusterId(emrId);
+    	
+    	return emrClient.listInstances(new ListInstancesRequest().withClusterId(emrId)).toString();
+
+	}
+	/**
+     * getClusterStatus: Gets status of EMR Cluster.  True if running, false otherwise.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} AmazonEMR
+     * 
+     * {param} string("emrId") input: emrID as output from tAmazonEMRManage component (global).
+     * {param} string("region") input: AWS region that supports EMR.
+     * {param} string("access_key") input: Your Amazon access key.
+     * {param} string("secret_key") input: Your Amazon secret key.
+     * 
+     * {example} getClusterStatus( "j-121345987654", "us-west", "user@company.com", "XXXXXXXXXXXX") 
+     *
+     */
+	public static String  getClusterStatus(String emrId, String region, String access_key, String secret_key) {
+		AWSCredentials credentials;
+    	credentials = new BasicAWSCredentials(access_key, secret_key);
+
+    	AmazonElasticMapReduceClient emrClient;
+    	emrClient = new AmazonElasticMapReduceClient(credentials);
+    	emrClient.setEndpoint(getEndPoint(region));
+    	
+    	DescribeClusterRequest dcr = new DescribeClusterRequest();
+    	dcr.setClusterId(emrId);
+    	
+    	DescribeClusterResult dr = new DescribeClusterResult();
+    	dr = emrClient.describeCluster(dcr);
+    	
+    	Cluster c = dr.getCluster();
+    	ClusterStatus cs = c.getStatus();
+    	return cs.getState();
+    	
+    	
+	}
+    
+}

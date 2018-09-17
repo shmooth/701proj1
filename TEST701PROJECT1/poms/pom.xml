@@ -11,6 +11,7 @@
   <modules>
     <module>code/routines</module>
     <module>jobs/process/twebservice_test_on_tac_0.1</module>
+    <module>jobs/process/EMR_Whitepaper/tdye_emr_start_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TEST701PROJECT1</talend.project.name>
