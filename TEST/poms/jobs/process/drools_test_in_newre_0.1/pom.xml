@@ -8,7 +8,7 @@
     <version>7.0.1</version>
     <relativePath>../../../</relativePath>
   </parent>
-  <groupId>org.example.test.job</groupId>
+  <groupId>org.harish</groupId>
   <artifactId>Drools_test_in_newRE</artifactId>
   <version>0.1.0</version>
   <name>TEST Drools_test_in_newRE-0.1.0 (0.1,Job Designs)</name>
