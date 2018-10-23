@@ -12,6 +12,7 @@
     <module>code/routines</module>
     <module>jobs/process/drool_test_701_0.1</module>
     <module>jobs/process/drools_test_in_newre_0.1</module>
+    <module>jobs/process_storm/teststreaming_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TEST</talend.project.name>
