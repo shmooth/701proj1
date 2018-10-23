@@ -1,4 +1,4 @@
-package org.talend.survivorship.new_test_drools 
+package org.talend.survivorship.sample 
 
 rule "2_Longest"
     no-loop true

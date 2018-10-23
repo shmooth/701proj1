@@ -12,12 +12,12 @@
              xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
              xmlns:tns="http://www.jboss.org/drools">
 
-  <process processType="Private" isExecutable="true" id="org.talend.survivorship.new_test_drools.SurvivorFlow" name="SurvivorFlow" >
+  <process processType="Private" isExecutable="true" id="org.talend.survivorship.sample.SurvivorFlow" name="SurvivorFlow" >
 
     <!-- nodes -->
-    <startEvent id="_jbpm-unique-42" name="start"  isInterrupting="false">
+    <startEvent id="_jbpm-unique-86" name="start"  isInterrupting="false">
     </startEvent>
-    <businessRuleTask id="_jbpm-unique-43" name="1_lengthfirstname" g:ruleFlowGroup="1_lengthfirstnameGroup" >
+    <businessRuleTask id="_jbpm-unique-87" name="1_lengthfirstname" g:ruleFlowGroup="1_lengthfirstnameGroup" >
       <ioSpecification>
         <inputSet>
         </inputSet>
@@ -25,7 +25,7 @@
         </outputSet>
       </ioSpecification>
     </businessRuleTask>
-    <businessRuleTask id="_jbpm-unique-44" name="2_Longest" g:ruleFlowGroup="2_LongestGroup" >
+    <businessRuleTask id="_jbpm-unique-88" name="2_Longest" g:ruleFlowGroup="2_LongestGroup" >
       <ioSpecification>
         <inputSet>
         </inputSet>
@@ -33,7 +33,7 @@
         </outputSet>
       </ioSpecification>
     </businessRuleTask>
-    <businessRuleTask id="_jbpm-unique-45" name="3_HighCredibility" g:ruleFlowGroup="3_HighCredibilityGroup" >
+    <businessRuleTask id="_jbpm-unique-89" name="3_HighCredibility" g:ruleFlowGroup="3_HighCredibilityGroup" >
       <ioSpecification>
         <inputSet>
         </inputSet>
@@ -41,7 +41,7 @@
         </outputSet>
       </ioSpecification>
     </businessRuleTask>
-    <businessRuleTask id="_jbpm-unique-46" name="4_MostCommonCity" g:ruleFlowGroup="4_MostCommonCityGroup" >
+    <businessRuleTask id="_jbpm-unique-90" name="4_MostCommonCity" g:ruleFlowGroup="4_MostCommonCityGroup" >
       <ioSpecification>
         <inputSet>
         </inputSet>
@@ -49,7 +49,7 @@
         </outputSet>
       </ioSpecification>
     </businessRuleTask>
-    <businessRuleTask id="_jbpm-unique-47" name="5_MostCommonSate" g:ruleFlowGroup="5_MostCommonSateGroup" >
+    <businessRuleTask id="_jbpm-unique-91" name="5_MostCommonSate" g:ruleFlowGroup="5_MostCommonSateGroup" >
       <ioSpecification>
         <inputSet>
         </inputSet>
@@ -57,64 +57,64 @@
         </outputSet>
       </ioSpecification>
     </businessRuleTask>
-    <endEvent id="_jbpm-unique-48" name="end" >
+    <endEvent id="_jbpm-unique-92" name="end" >
         <terminateEventDefinition />
     </endEvent>
 
     <!-- connections -->
-    <sequenceFlow id="_jbpm-unique-42-_jbpm-unique-43" sourceRef="_jbpm-unique-42" targetRef="_jbpm-unique-43" />
-    <sequenceFlow id="_jbpm-unique-43-_jbpm-unique-44" sourceRef="_jbpm-unique-43" targetRef="_jbpm-unique-44" />
-    <sequenceFlow id="_jbpm-unique-44-_jbpm-unique-45" sourceRef="_jbpm-unique-44" targetRef="_jbpm-unique-45" />
-    <sequenceFlow id="_jbpm-unique-45-_jbpm-unique-46" sourceRef="_jbpm-unique-45" targetRef="_jbpm-unique-46" />
-    <sequenceFlow id="_jbpm-unique-46-_jbpm-unique-47" sourceRef="_jbpm-unique-46" targetRef="_jbpm-unique-47" />
-    <sequenceFlow id="_jbpm-unique-47-_jbpm-unique-48" sourceRef="_jbpm-unique-47" targetRef="_jbpm-unique-48" />
+    <sequenceFlow id="_jbpm-unique-86-_jbpm-unique-87" sourceRef="_jbpm-unique-86" targetRef="_jbpm-unique-87" />
+    <sequenceFlow id="_jbpm-unique-87-_jbpm-unique-88" sourceRef="_jbpm-unique-87" targetRef="_jbpm-unique-88" />
+    <sequenceFlow id="_jbpm-unique-88-_jbpm-unique-89" sourceRef="_jbpm-unique-88" targetRef="_jbpm-unique-89" />
+    <sequenceFlow id="_jbpm-unique-89-_jbpm-unique-90" sourceRef="_jbpm-unique-89" targetRef="_jbpm-unique-90" />
+    <sequenceFlow id="_jbpm-unique-90-_jbpm-unique-91" sourceRef="_jbpm-unique-90" targetRef="_jbpm-unique-91" />
+    <sequenceFlow id="_jbpm-unique-91-_jbpm-unique-92" sourceRef="_jbpm-unique-91" targetRef="_jbpm-unique-92" />
 
   </process>
 
   <bpmndi:BPMNDiagram>
-    <bpmndi:BPMNPlane bpmnElement="org.talend.survivorship.new_test_drools.SurvivorFlow" >
-      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-42" >
+    <bpmndi:BPMNPlane bpmnElement="org.talend.survivorship.sample.SurvivorFlow" >
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-86" >
         <dc:Bounds x="63" y="16" width="48" height="48" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-43" >
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-87" >
         <dc:Bounds x="16" y="96" width="142" height="48" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-44" >
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-88" >
         <dc:Bounds x="47" y="176" width="80" height="48" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-45" >
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-89" >
         <dc:Bounds x="16" y="256" width="142" height="48" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-46" >
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-90" >
         <dc:Bounds x="19" y="336" width="136" height="48" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-47" >
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-91" >
         <dc:Bounds x="19" y="416" width="136" height="48" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-48" >
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-92" >
         <dc:Bounds x="63" y="496" width="48" height="48" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-42-_jbpm-unique-43" >
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-86-_jbpm-unique-87" >
         <di:waypoint x="87" y="40" />
         <di:waypoint x="87" y="120" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-43-_jbpm-unique-44" >
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-87-_jbpm-unique-88" >
         <di:waypoint x="87" y="120" />
         <di:waypoint x="87" y="200" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-44-_jbpm-unique-45" >
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-88-_jbpm-unique-89" >
         <di:waypoint x="87" y="200" />
         <di:waypoint x="87" y="280" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-45-_jbpm-unique-46" >
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-89-_jbpm-unique-90" >
         <di:waypoint x="87" y="280" />
         <di:waypoint x="87" y="360" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-46-_jbpm-unique-47" >
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-90-_jbpm-unique-91" >
         <di:waypoint x="87" y="360" />
         <di:waypoint x="87" y="440" />
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-47-_jbpm-unique-48" >
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-91-_jbpm-unique-92" >
         <di:waypoint x="87" y="440" />
         <di:waypoint x="87" y="520" />
       </bpmndi:BPMNEdge>
