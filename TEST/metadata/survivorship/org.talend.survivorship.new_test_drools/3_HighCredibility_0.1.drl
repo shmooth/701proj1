@@ -1,0 +1,14 @@
+package org.talend.survivorship.new_test_drools 
+
+rule "3_HighCredibility"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "3_HighCredibilityGroup"
+when
+    $input : RecordIn( credibility> 4 )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "credibility", drools.getRule().getName());
+
+end
+
+

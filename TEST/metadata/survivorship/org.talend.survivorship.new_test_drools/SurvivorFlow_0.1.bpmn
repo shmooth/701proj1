@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<definitions id="Definition"
+             targetNamespace="http://www.jboss.org/drools"
+             typeLanguage="http://www.java.com/javaTypes"
+             expressionLanguage="http://www.mvel.org/2.0"
+             xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd"
+             xmlns:g="http://www.jboss.org/drools/flow/gpd"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:tns="http://www.jboss.org/drools">
+
+  <process processType="Private" isExecutable="true" id="org.talend.survivorship.new_test_drools.SurvivorFlow" name="SurvivorFlow" >
+
+    <!-- nodes -->
+    <startEvent id="_jbpm-unique-42" name="start"  isInterrupting="false">
+    </startEvent>
+    <businessRuleTask id="_jbpm-unique-43" name="1_lengthfirstname" g:ruleFlowGroup="1_lengthfirstnameGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-44" name="2_Longest" g:ruleFlowGroup="2_LongestGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-45" name="3_HighCredibility" g:ruleFlowGroup="3_HighCredibilityGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-46" name="4_MostCommonCity" g:ruleFlowGroup="4_MostCommonCityGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <businessRuleTask id="_jbpm-unique-47" name="5_MostCommonSate" g:ruleFlowGroup="5_MostCommonSateGroup" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </businessRuleTask>
+    <endEvent id="_jbpm-unique-48" name="end" >
+        <terminateEventDefinition />
+    </endEvent>
+
+    <!-- connections -->
+    <sequenceFlow id="_jbpm-unique-42-_jbpm-unique-43" sourceRef="_jbpm-unique-42" targetRef="_jbpm-unique-43" />
+    <sequenceFlow id="_jbpm-unique-43-_jbpm-unique-44" sourceRef="_jbpm-unique-43" targetRef="_jbpm-unique-44" />
+    <sequenceFlow id="_jbpm-unique-44-_jbpm-unique-45" sourceRef="_jbpm-unique-44" targetRef="_jbpm-unique-45" />
+    <sequenceFlow id="_jbpm-unique-45-_jbpm-unique-46" sourceRef="_jbpm-unique-45" targetRef="_jbpm-unique-46" />
+    <sequenceFlow id="_jbpm-unique-46-_jbpm-unique-47" sourceRef="_jbpm-unique-46" targetRef="_jbpm-unique-47" />
+    <sequenceFlow id="_jbpm-unique-47-_jbpm-unique-48" sourceRef="_jbpm-unique-47" targetRef="_jbpm-unique-48" />
+
+  </process>
+
+  <bpmndi:BPMNDiagram>
+    <bpmndi:BPMNPlane bpmnElement="org.talend.survivorship.new_test_drools.SurvivorFlow" >
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-42" >
+        <dc:Bounds x="63" y="16" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-43" >
+        <dc:Bounds x="16" y="96" width="142" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-44" >
+        <dc:Bounds x="47" y="176" width="80" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-45" >
+        <dc:Bounds x="16" y="256" width="142" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-46" >
+        <dc:Bounds x="19" y="336" width="136" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-47" >
+        <dc:Bounds x="19" y="416" width="136" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-48" >
+        <dc:Bounds x="63" y="496" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-42-_jbpm-unique-43" >
+        <di:waypoint x="87" y="40" />
+        <di:waypoint x="87" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-43-_jbpm-unique-44" >
+        <di:waypoint x="87" y="120" />
+        <di:waypoint x="87" y="200" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-44-_jbpm-unique-45" >
+        <di:waypoint x="87" y="200" />
+        <di:waypoint x="87" y="280" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-45-_jbpm-unique-46" >
+        <di:waypoint x="87" y="280" />
+        <di:waypoint x="87" y="360" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-46-_jbpm-unique-47" >
+        <di:waypoint x="87" y="360" />
+        <di:waypoint x="87" y="440" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-47-_jbpm-unique-48" >
+        <di:waypoint x="87" y="440" />
+        <di:waypoint x="87" y="520" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+
+</definitions>

@@ -1,0 +1,14 @@
+package org.talend.survivorship.new_test_drools 
+
+rule "1_lengthfirstname"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "1_lengthfirstnameGroup"
+when
+    $input : RecordIn( firstname.length>5 )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "firstname", drools.getRule().getName());
+
+end
+
+

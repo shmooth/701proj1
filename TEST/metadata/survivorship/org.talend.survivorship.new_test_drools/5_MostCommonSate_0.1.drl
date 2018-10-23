@@ -1,0 +1,14 @@
+package org.talend.survivorship.new_test_drools 
+
+rule "5_MostCommonSate"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "5_MostCommonSateGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( state, "state", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "state", drools.getRule().getName());
+
+end
+
+

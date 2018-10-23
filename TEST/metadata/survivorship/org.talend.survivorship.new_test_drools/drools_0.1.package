@@ -1,0 +1,25 @@
+package org.talend.survivorship.new_test_drools 
+
+import java.util.Date
+import java.math.BigDecimal
+
+global org.talend.survivorship.model.DataSet dataset
+
+declare  RecordIn 
+
+    TALEND_INTERNAL_ID : int  
+    firstname : String  
+    lastname : String  
+    city : String  
+    state : String  
+    zip : Integer  
+    date : Date  
+    credibility : Integer  
+    gid : String  
+    grp_size : Integer  
+    master : Boolean  
+    score : Double  
+    grp_quality : Double  
+end
+
+
