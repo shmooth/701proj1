@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="active_flag" prompt="active_flag?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="batch_id" prompt="batch_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
-    <contextParameter comment="" name="batch_name" prompt="batch_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="current_date" prompt="current_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="PROD"/>
-    <contextParameter comment="" name="error_description" prompt="error_description?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="etl_load_type" prompt="etl_load_type?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="etl_stage_name" prompt="etl_stage_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="failure_receiver_id" prompt="failure_receiver_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="&quot;EDW_ProdNotifications@firsttechfed.com&quot;"/>
-    <contextParameter comment="" name="insert_query_job_status" prompt="insert_query_job_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="insert_query_job_status_hist" prompt="insert_query_job_status_hist?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="inserted_count" prompt="inserted_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
-    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="last_status" prompt="last_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="load_date" prompt="load_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="max_date" prompt="max_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Date" value=""/>
-    <contextParameter comment="" name="max_date_columnname" prompt="max_date_columnname?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="max_row_key" prompt="max_row_key?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
-    <contextParameter comment="" name="max_row_key_columnname" prompt="max_row_key_columnname?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="min_date" prompt="min_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="origin" prompt="origin?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="parent_job_name" prompt="parent_job_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="receiver_mail_id" prompt="receiver_mail_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="&quot;EDW_ProdNotifications@firsttechfed.com&quot;"/>
-    <contextParameter comment="" name="records_processed_count" prompt="records_processed_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
-    <contextParameter comment="" name="records_read_count" prompt="records_read_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
-    <contextParameter comment="" name="row_count_checked" prompt="row_count_checked?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="select_query_jobcontrol" prompt="select_query_jobcontrol?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="sender_mail_id" prompt="sender_mail_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="&quot;DL-DigitalAnalytics_Support@firsttechfed.com&quot;"/>
-    <contextParameter comment="" name="source_query" prompt="source_query?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="status" prompt="status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="success_receiver_id" prompt="success_receiver_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="&quot;EDW_ProdNotifications@firsttechfed.com&quot;"/>
-    <contextParameter comment="" name="tablename" prompt="tablename?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="talend_log_file_path" prompt="talend_log_file_path?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="&quot;//athena/Departments/DigitalAnalytics/Dev/TalendLogs&quot;"/>
-    <contextParameter comment="" name="update_query_job_status" prompt="update_query_job_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="update_query_jobcontrol" prompt="update_query_jobcontrol?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="updated_count" prompt="updated_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="active_flag" prompt="active_flag?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="batch_id" prompt="batch_id?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="batch_name" prompt="batch_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="current_date" prompt="current_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="environment" prompt="environment?" promptNeeded="false" type="id_String" value="PROD"/>
+    <contextParameter comment="" name="error_description" prompt="error_description?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="etl_load_type" prompt="etl_load_type?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="etl_stage_name" prompt="etl_stage_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="failure_receiver_id" prompt="failure_receiver_id?" promptNeeded="false" type="id_String" value="&quot;EDW_ProdNotifications@firsttechfed.com&quot;"/>
+    <contextParameter comment="" name="insert_query_job_status" prompt="insert_query_job_status?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="insert_query_job_status_hist" prompt="insert_query_job_status_hist?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="inserted_count" prompt="inserted_count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="last_status" prompt="last_status?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="load_date" prompt="load_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="max_date" prompt="max_date?" promptNeeded="false" type="id_Date" value=""/>
+    <contextParameter comment="" name="max_date_columnname" prompt="max_date_columnname?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="max_row_key" prompt="max_row_key?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="max_row_key_columnname" prompt="max_row_key_columnname?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="min_date" prompt="min_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="origin" prompt="origin?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="parent_job_name" prompt="parent_job_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="receiver_mail_id" prompt="receiver_mail_id?" promptNeeded="false" type="id_String" value="&quot;EDW_ProdNotifications@firsttechfed.com&quot;"/>
+    <contextParameter comment="" name="records_processed_count" prompt="records_processed_count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="records_read_count" prompt="records_read_count?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="row_count_checked" prompt="row_count_checked?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="select_query_jobcontrol" prompt="select_query_jobcontrol?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="sender_mail_id" prompt="sender_mail_id?" promptNeeded="false" type="id_String" value="&quot;DL-DigitalAnalytics_Support@firsttechfed.com&quot;"/>
+    <contextParameter comment="" name="source_query" prompt="source_query?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="status" prompt="status?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="success_receiver_id" prompt="success_receiver_id?" promptNeeded="false" type="id_String" value="&quot;EDW_ProdNotifications@firsttechfed.com&quot;"/>
+    <contextParameter comment="" name="tablename" prompt="tablename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="talend_log_file_path" prompt="talend_log_file_path?" promptNeeded="false" type="id_String" value="&quot;//athena/Departments/DigitalAnalytics/Dev/TalendLogs&quot;"/>
+    <contextParameter comment="" name="update_query_job_status" prompt="update_query_job_status?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="update_query_jobcontrol" prompt="update_query_jobcontrol?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="updated_count" prompt="updated_count?" promptNeeded="false" type="id_Integer" value="0"/>
     <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Port" prompt="MSSQL_SVC_stage_EDW_Tgt_Port?" promptNeeded="false" type="id_String" value="1433"/>
     <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Server" prompt="MSSQL_SVC_stage_EDW_Tgt_Server?" promptNeeded="false" type="id_String" value="WEST-EDWDEVSQL"/>
     <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Database" prompt="MSSQL_SVC_stage_EDW_Tgt_Database?" promptNeeded="false" type="id_String" value="DWAnalytics"/>
@@ -57,45 +57,45 @@
     <contextParameter comment="" name="JOBDETAILS_AdditionalParams" prompt="JOBDETAILS_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="JOBDETAILS_Schema" prompt="JOBDETAILS_Schema?" promptNeeded="false" type="id_String" value="JOBDETAILS"/>
     <contextParameter comment="" name="JOBDETAILS_Password" prompt="JOBDETAILS_Password?" promptNeeded="false" type="id_Password" value="DOVXYQGUqVWsoaacvaY7ew=="/>
-    <contextParameter comment="" name="last_day" prompt="last_day?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Date" value=""/>
+    <contextParameter comment="" name="last_day" prompt="last_day?" promptNeeded="false" type="id_Date" value=""/>
   </context>
   <context confirmationNeeded="false" name="dev">
-    <contextParameter comment="" name="active_flag" prompt="active_flag?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="batch_id" prompt="batch_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
-    <contextParameter comment="" name="batch_name" prompt="batch_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="current_date" prompt="current_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="DEV"/>
-    <contextParameter comment="" name="error_description" prompt="error_description?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="etl_load_type" prompt="etl_load_type?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="etl_stage_name" prompt="etl_stage_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="failure_receiver_id" prompt="failure_receiver_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="insert_query_job_status" prompt="insert_query_job_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="insert_query_job_status_hist" prompt="insert_query_job_status_hist?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="inserted_count" prompt="inserted_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
-    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="last_status" prompt="last_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="load_date" prompt="load_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="max_date" prompt="max_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Date" value=""/>
-    <contextParameter comment="" name="max_date_columnname" prompt="max_date_columnname?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="max_row_key" prompt="max_row_key?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
-    <contextParameter comment="" name="max_row_key_columnname" prompt="max_row_key_columnname?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="min_date" prompt="min_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="origin" prompt="origin?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="parent_job_name" prompt="parent_job_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="receiver_mail_id" prompt="receiver_mail_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="records_processed_count" prompt="records_processed_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
-    <contextParameter comment="" name="records_read_count" prompt="records_read_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
-    <contextParameter comment="" name="row_count_checked" prompt="row_count_checked?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="select_query_jobcontrol" prompt="select_query_jobcontrol?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="sender_mail_id" prompt="sender_mail_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="source_query" prompt="source_query?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="status" prompt="status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="success_receiver_id" prompt="success_receiver_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="tablename" prompt="tablename?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="talend_log_file_path" prompt="talend_log_file_path?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="&quot;//athena/Departments/DigitalAnalytics/Dev/TalendLogs&quot;"/>
-    <contextParameter comment="" name="update_query_job_status" prompt="update_query_job_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="update_query_jobcontrol" prompt="update_query_jobcontrol?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="updated_count" prompt="updated_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="active_flag" prompt="active_flag?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="batch_id" prompt="batch_id?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="batch_name" prompt="batch_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="current_date" prompt="current_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="environment" prompt="environment?" promptNeeded="false" type="id_String" value="DEV"/>
+    <contextParameter comment="" name="error_description" prompt="error_description?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="etl_load_type" prompt="etl_load_type?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="etl_stage_name" prompt="etl_stage_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="failure_receiver_id" prompt="failure_receiver_id?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="insert_query_job_status" prompt="insert_query_job_status?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="insert_query_job_status_hist" prompt="insert_query_job_status_hist?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="inserted_count" prompt="inserted_count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="last_status" prompt="last_status?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="load_date" prompt="load_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="max_date" prompt="max_date?" promptNeeded="false" type="id_Date" value=""/>
+    <contextParameter comment="" name="max_date_columnname" prompt="max_date_columnname?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="max_row_key" prompt="max_row_key?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="max_row_key_columnname" prompt="max_row_key_columnname?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="min_date" prompt="min_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="origin" prompt="origin?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="parent_job_name" prompt="parent_job_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="receiver_mail_id" prompt="receiver_mail_id?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="records_processed_count" prompt="records_processed_count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="records_read_count" prompt="records_read_count?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="row_count_checked" prompt="row_count_checked?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="select_query_jobcontrol" prompt="select_query_jobcontrol?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="sender_mail_id" prompt="sender_mail_id?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="source_query" prompt="source_query?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="status" prompt="status?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="success_receiver_id" prompt="success_receiver_id?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="tablename" prompt="tablename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="talend_log_file_path" prompt="talend_log_file_path?" promptNeeded="false" type="id_String" value="&quot;//athena/Departments/DigitalAnalytics/Dev/TalendLogs&quot;"/>
+    <contextParameter comment="" name="update_query_job_status" prompt="update_query_job_status?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="update_query_jobcontrol" prompt="update_query_jobcontrol?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="updated_count" prompt="updated_count?" promptNeeded="false" type="id_Integer" value="0"/>
     <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Port" prompt="MSSQL_SVC_stage_EDW_Tgt_Port?" promptNeeded="false" type="id_String" value="1433"/>
     <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Server" prompt="MSSQL_SVC_stage_EDW_Tgt_Server?" promptNeeded="false" type="id_String" value="WEST-EDWDEVSQL"/>
     <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Database" prompt="MSSQL_SVC_stage_EDW_Tgt_Database?" promptNeeded="false" type="id_String" value="DWAnalytics"/>
@@ -117,45 +117,45 @@
     <contextParameter comment="" name="JOBDETAILS_AdditionalParams" prompt="JOBDETAILS_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="JOBDETAILS_Schema" prompt="JOBDETAILS_Schema?" promptNeeded="false" type="id_String" value="JOBDETAILS"/>
     <contextParameter comment="" name="JOBDETAILS_Password" prompt="JOBDETAILS_Password?" promptNeeded="false" type="id_Password" value="DOVXYQGUqVWsoaacvaY7ew=="/>
-    <contextParameter comment="" name="last_day" prompt="last_day?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Date" value=""/>
+    <contextParameter comment="" name="last_day" prompt="last_day?" promptNeeded="false" type="id_Date" value=""/>
   </context>
   <context confirmationNeeded="false" name="prod">
-    <contextParameter comment="" name="active_flag" prompt="active_flag?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="batch_id" prompt="batch_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
-    <contextParameter comment="" name="batch_name" prompt="batch_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="current_date" prompt="current_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="PROD"/>
-    <contextParameter comment="" name="error_description" prompt="error_description?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="etl_load_type" prompt="etl_load_type?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="etl_stage_name" prompt="etl_stage_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="failure_receiver_id" prompt="failure_receiver_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="insert_query_job_status" prompt="insert_query_job_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="insert_query_job_status_hist" prompt="insert_query_job_status_hist?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="inserted_count" prompt="inserted_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
-    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="last_status" prompt="last_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="load_date" prompt="load_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="max_date" prompt="max_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Date" value=""/>
-    <contextParameter comment="" name="max_date_columnname" prompt="max_date_columnname?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="max_row_key" prompt="max_row_key?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
-    <contextParameter comment="" name="max_row_key_columnname" prompt="max_row_key_columnname?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="min_date" prompt="min_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="origin" prompt="origin?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="parent_job_name" prompt="parent_job_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="receiver_mail_id" prompt="receiver_mail_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="records_processed_count" prompt="records_processed_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
-    <contextParameter comment="" name="records_read_count" prompt="records_read_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
-    <contextParameter comment="" name="row_count_checked" prompt="row_count_checked?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="select_query_jobcontrol" prompt="select_query_jobcontrol?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="sender_mail_id" prompt="sender_mail_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="source_query" prompt="source_query?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="status" prompt="status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="success_receiver_id" prompt="success_receiver_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="tablename" prompt="tablename?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="talend_log_file_path" prompt="talend_log_file_path?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="&quot;//athena/Departments/DigitalAnalytics/Dev/TalendLogs&quot;"/>
-    <contextParameter comment="" name="update_query_job_status" prompt="update_query_job_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="update_query_jobcontrol" prompt="update_query_jobcontrol?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
-    <contextParameter comment="" name="updated_count" prompt="updated_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="active_flag" prompt="active_flag?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="batch_id" prompt="batch_id?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="batch_name" prompt="batch_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="current_date" prompt="current_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="environment" prompt="environment?" promptNeeded="false" type="id_String" value="PROD"/>
+    <contextParameter comment="" name="error_description" prompt="error_description?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="etl_load_type" prompt="etl_load_type?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="etl_stage_name" prompt="etl_stage_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="failure_receiver_id" prompt="failure_receiver_id?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="insert_query_job_status" prompt="insert_query_job_status?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="insert_query_job_status_hist" prompt="insert_query_job_status_hist?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="inserted_count" prompt="inserted_count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="last_status" prompt="last_status?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="load_date" prompt="load_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="max_date" prompt="max_date?" promptNeeded="false" type="id_Date" value=""/>
+    <contextParameter comment="" name="max_date_columnname" prompt="max_date_columnname?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="max_row_key" prompt="max_row_key?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="max_row_key_columnname" prompt="max_row_key_columnname?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="min_date" prompt="min_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="origin" prompt="origin?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="parent_job_name" prompt="parent_job_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="receiver_mail_id" prompt="receiver_mail_id?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="records_processed_count" prompt="records_processed_count?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="records_read_count" prompt="records_read_count?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="row_count_checked" prompt="row_count_checked?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="select_query_jobcontrol" prompt="select_query_jobcontrol?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="sender_mail_id" prompt="sender_mail_id?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="source_query" prompt="source_query?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="status" prompt="status?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="success_receiver_id" prompt="success_receiver_id?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="tablename" prompt="tablename?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="talend_log_file_path" prompt="talend_log_file_path?" promptNeeded="false" type="id_String" value="&quot;//athena/Departments/DigitalAnalytics/Dev/TalendLogs&quot;"/>
+    <contextParameter comment="" name="update_query_job_status" prompt="update_query_job_status?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="update_query_jobcontrol" prompt="update_query_jobcontrol?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="updated_count" prompt="updated_count?" promptNeeded="false" type="id_Integer" value="0"/>
     <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Port" prompt="MSSQL_SVC_stage_EDW_Tgt_Port?" promptNeeded="false" type="id_String" value="1433"/>
     <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Server" prompt="MSSQL_SVC_stage_EDW_Tgt_Server?" promptNeeded="false" type="id_String" value="WEST-EDWDEVSQL"/>
     <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Database" prompt="MSSQL_SVC_stage_EDW_Tgt_Database?" promptNeeded="false" type="id_String" value="DWAnalytics"/>
@@ -177,7 +177,7 @@
     <contextParameter comment="" name="JOBDETAILS_AdditionalParams" prompt="JOBDETAILS_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="JOBDETAILS_Schema" prompt="JOBDETAILS_Schema?" promptNeeded="false" type="id_String" value="JOBDETAILS"/>
     <contextParameter comment="" name="JOBDETAILS_Password" prompt="JOBDETAILS_Password?" promptNeeded="false" type="id_Password" value="DOVXYQGUqVWsoaacvaY7ew=="/>
-    <contextParameter comment="" name="last_day" prompt="last_day?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Date" value=""/>
+    <contextParameter comment="" name="last_day" prompt="last_day?" promptNeeded="false" type="id_Date" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -224,8 +224,8 @@
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value=""/>
-    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
     <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
     <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
     <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
@@ -235,7 +235,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Dinesh_work/Talend-Studio-20170623_1246-V6.4.1/Talend-Studio-20170623_1246-V6.4.1/workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/psmith/workspaces/7.0.1/ws7/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -310,11 +310,12 @@
     <routinesParameter id="_WbDMIJC2Ed62Pvbk19JsUg" name="XigniteFundHoldingsLocator"/>
     <routinesParameter id="_WbWHEJC2Ed62Pvbk19JsUg" name="XigniteFundHoldingsSoap_BindingStub"/>
     <routinesParameter id="_eQv-0Lj_Eee4k8uwDEJ0mg" name="TalendStringUtil"/>
+    <routinesParameter id="_s60j8NcPEeiVF9nHSptZYQ" name="DataMasking"/>
+    <routinesParameter id="_s6-8ANcPEeiVF9nHSptZYQ" name="DataQualityDependencies"/>
+    <routinesParameter id="_s7OMkNcPEeiVF9nHSptZYQ" name="MDM"/>
   </parameters>
   <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_1"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_MLuVgHQlEeWL3PwtkO-Wug"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
@@ -409,6 +410,8 @@
     <elementParameter field="IMAGE" name="PREVIEW" value="_1zROsOzYEeeNo6_E7ETlJQ-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
@@ -476,8 +479,6 @@
   </node>
   <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlOutput_1"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_1BOm4NLaEeaocKGFifZxhQ"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
@@ -1476,13 +1477,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fb416325-c7b2-42a4-9328-58f719123ff2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Pcf64VzfxAavSjx+rK204dDkv3t5ZGeEzxjyvSkiiKEJuawAr/BKBA2uTEpZn424A5b7T4c5F+eo
-DnSBQr+LhQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_66ca2ce4-71f1-48aa-a95a-0dc411995b9f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vHFY42HRfqhY1m7NQZYH3fvUKLO9KTkps0mLAsScHyCaWR8XQXf73pagCYIyCCrJXU0bnLwsObKW
-W9LNcvTZTw==</DigestValue></Reference></SignedInfo><SignatureValue>Hu6pP2RycrZKiyaSaRvLI2wKAGx15Dtu2p93itSCcALZva4Xs0qTUOC2en2VoWUmb231gEjQEtdA
-w4D5FAs9HfAks5jCedBB9V8MX/BJnaap5l27+6yhCqE6QBuxQ3eYN+xXU/6GgWUC0fithLUaNBsu
-VXOIL0ATr4jTd5QyFwRE1qkMQPSd2UBf8WOqtaSHCvskWC2aRUzxhsLw4YV7ehPQ5tHZg68ltWWG
-5qW2fKp+oDyU5fAqgu6uchcXLUQxiH9wEej7NB0cokQw4MfgqfLrqaWuOonrdOqyEV1apF1DSdC9
-W/+enNSlzDKYPH/ZBKAdQYXFT651FM7ItwSTnA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d12221d8-e253-4cc8-b964-006701bcdb0e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JaJIn8IgRqNieh6i245rqWpSMv/zNghLyNEwIVXbdchOUu86nIgwrmc8Z3PIqmV73QL1tGOaHYQz
+6WSmlFIK6Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b80f3900-5f00-4a52-988b-7c5ad169bcde"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3nCnfd+PtaQ2D9jXl0Bpe1Ox2U8bm9UnpaSfjn1ApJZg6UqvlB6moaT3lHzDLBCDZSHRUU7KHy8a
+TfwfUtCzdQ==</DigestValue></Reference></SignedInfo><SignatureValue>J6xbRwXmGUQXzxXgIQqU+Dp+EPLJ83buFDrNGZjSJ2ZHAGw+IQCV66StyMVvh2I/5GI2xV4M9/sf
+pjKtqJc1ZPqCFoKKEkXdrursICwnx3Kwh5rTUiv0Qxbx1m1tPO1zuP4wBfBA9EI4PWGJKzYLZEpI
+2ICjGXAeQpvq6B4oAnI3gE3AqMJD9uX1fJ6KsSOuaJGH8cXRmUW2ufISyl3FwHmz8B4sNo3ZLs0v
+G9CDhd6/xfLiA5wAp/NoOuhdzPUN2WnDseUVO/HH+6dtb6Mus0Z8O6gL0iskY1N+BcdOw3SYeDVY
+NH3zW4BPiFkhk2C6TUTYq4kgVkPk75V/wt/2bw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1506,4 +1507,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_66ca2ce4-71f1-48aa-a95a-0dc411995b9f" Target="#_fb416325-c7b2-42a4-9328-58f719123ff2"><Timestamp>2018-10-24 00:38:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b80f3900-5f00-4a52-988b-7c5ad169bcde" Target="#_d12221d8-e253-4cc8-b964-006701bcdb0e"><Timestamp>2018-10-24 00:39:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
