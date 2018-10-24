@@ -175,6 +175,49 @@
       <relatedItems xmi:id="_VcZQENciEeiVF9nHSptZYQ" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_VcZQEdciEeiVF9nHSptZYQ" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_MlzicNclEei2jP6Appo_uQ">
+      <baseItem xmi:id="_MlzicdclEei2jP6Appo_uQ" id="_1zROsOzYEeeNo6_E7ETlJQ" version="0.2" type="job"/>
+      <relatedItems xmi:id="_MlzictclEei2jP6Appo_uQ" id="_rQJuEGHXEeeu8vo6pdarNw" version="Latest" type="context"/>
+      <relatedItems xmi:id="_Mlzic9clEei2jP6Appo_uQ" id="_1BOm4NLaEeaocKGFifZxhQ" version="Latest" type="property"/>
+      <relatedItems xmi:id="_MlzidNclEei2jP6Appo_uQ" id="_MLuVgHQlEeWL3PwtkO-Wug" version="Latest" type="property"/>
+      <relatedItems xmi:id="_MlziddclEei2jP6Appo_uQ" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzidtclEei2jP6Appo_uQ" id="XigniteFundHoldings" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Mlzid9clEei2jP6Appo_uQ" id="XigniteFundHoldingsLocator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzieNclEei2jP6Appo_uQ" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlziedclEei2jP6Appo_uQ" id="Common" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzietclEei2jP6Appo_uQ" id="DemoRoutines" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Mlzie9clEei2jP6Appo_uQ" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzifNclEei2jP6Appo_uQ" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzifdclEei2jP6Appo_uQ" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlziftclEei2jP6Appo_uQ" id="IdentifierTypes" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Mlzif9clEei2jP6Appo_uQ" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzigNclEei2jP6Appo_uQ" id="XigniteFundHoldingsSoap_BindingStub" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzigdclEei2jP6Appo_uQ" id="Fund" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzigtclEei2jP6Appo_uQ" id="Holding" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Mlzig9clEei2jP6Appo_uQ" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzihNclEei2jP6Appo_uQ" id="Security" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzihdclEei2jP6Appo_uQ" id="XigniteFundHoldingsSoap12Stub" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzihtclEei2jP6Appo_uQ" id="ShortFiling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Mlzih9clEei2jP6Appo_uQ" id="RemoveAscii" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlziiNclEei2jP6Appo_uQ" id="test_char" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlziidclEei2jP6Appo_uQ" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlziitclEei2jP6Appo_uQ" id="FundHoldings" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Mlzii9clEei2jP6Appo_uQ" id="GetRandomTelNum" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzijNclEei2jP6Appo_uQ" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzijdclEei2jP6Appo_uQ" id="SecurityHolders" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzijtclEei2jP6Appo_uQ" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Mlzij9clEei2jP6Appo_uQ" id="XigniteFundHoldingsSoap_PortType" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzikNclEei2jP6Appo_uQ" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzikdclEei2jP6Appo_uQ" id="OutcomeTypes" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlziktclEei2jP6Appo_uQ" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Mlzik9clEei2jP6Appo_uQ" id="KeyManagementForSqoop" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzilNclEei2jP6Appo_uQ" id="GetRandomPhoneNum" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzildclEei2jP6Appo_uQ" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlziltclEei2jP6Appo_uQ" id="MyRoutineDemo" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Mlzil9clEei2jP6Appo_uQ" id="Holder" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzimNclEei2jP6Appo_uQ" id="TopTypes" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_MlzimdclEei2jP6Appo_uQ" id="_1BOm4NLaEeaocKGFifZxhQ - lnd_ack_col_collateral" version="Latest" type="schema"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_swxQENcPEeiVF9nHSptZYQ" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_swxQEdcPEeiVF9nHSptZYQ" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_swxQEtcPEeiVF9nHSptZYQ" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>

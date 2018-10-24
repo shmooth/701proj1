@@ -1,0 +1,1509 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="active_flag" prompt="active_flag?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="batch_id" prompt="batch_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
+    <contextParameter comment="" name="batch_name" prompt="batch_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="current_date" prompt="current_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="PROD"/>
+    <contextParameter comment="" name="error_description" prompt="error_description?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="etl_load_type" prompt="etl_load_type?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="etl_stage_name" prompt="etl_stage_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="failure_receiver_id" prompt="failure_receiver_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="&quot;EDW_ProdNotifications@firsttechfed.com&quot;"/>
+    <contextParameter comment="" name="insert_query_job_status" prompt="insert_query_job_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="insert_query_job_status_hist" prompt="insert_query_job_status_hist?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="inserted_count" prompt="inserted_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="last_status" prompt="last_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="load_date" prompt="load_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="max_date" prompt="max_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Date" value=""/>
+    <contextParameter comment="" name="max_date_columnname" prompt="max_date_columnname?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="max_row_key" prompt="max_row_key?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
+    <contextParameter comment="" name="max_row_key_columnname" prompt="max_row_key_columnname?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="min_date" prompt="min_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="origin" prompt="origin?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="parent_job_name" prompt="parent_job_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="receiver_mail_id" prompt="receiver_mail_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="&quot;EDW_ProdNotifications@firsttechfed.com&quot;"/>
+    <contextParameter comment="" name="records_processed_count" prompt="records_processed_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="records_read_count" prompt="records_read_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
+    <contextParameter comment="" name="row_count_checked" prompt="row_count_checked?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="select_query_jobcontrol" prompt="select_query_jobcontrol?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="sender_mail_id" prompt="sender_mail_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="&quot;DL-DigitalAnalytics_Support@firsttechfed.com&quot;"/>
+    <contextParameter comment="" name="source_query" prompt="source_query?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="status" prompt="status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="success_receiver_id" prompt="success_receiver_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="&quot;EDW_ProdNotifications@firsttechfed.com&quot;"/>
+    <contextParameter comment="" name="tablename" prompt="tablename?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="talend_log_file_path" prompt="talend_log_file_path?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="&quot;//athena/Departments/DigitalAnalytics/Dev/TalendLogs&quot;"/>
+    <contextParameter comment="" name="update_query_job_status" prompt="update_query_job_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="update_query_jobcontrol" prompt="update_query_jobcontrol?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="updated_count" prompt="updated_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Port" prompt="MSSQL_SVC_stage_EDW_Tgt_Port?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Server" prompt="MSSQL_SVC_stage_EDW_Tgt_Server?" promptNeeded="false" type="id_String" value="WEST-EDWDEVSQL"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Database" prompt="MSSQL_SVC_stage_EDW_Tgt_Database?" promptNeeded="false" type="id_String" value="DWAnalytics"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Schema" prompt="MSSQL_SVC_stage_EDW_Tgt_Schema?" promptNeeded="false" type="id_String" value="stg"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Password" prompt="MSSQL_SVC_stage_EDW_Tgt_Password?" promptNeeded="false" type="id_Password" value="QosSxYTlqHrVZJdnEL1aQspxmA4jxzqY"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Login" prompt="MSSQL_SVC_stage_EDW_Tgt_Login?" promptNeeded="false" type="id_String" value="svc-devtalend"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_AdditionalParams" prompt="MSSQL_SVC_stage_EDW_Tgt_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="OSI_DataAnalytics_ServiceName" prompt="OSI_DataAnalytics_ServiceName?" promptNeeded="false" type="id_String" value="FTFRPT3.WORLD"/>
+    <contextParameter comment="" name="OSI_DataAnalytics_Server" prompt="OSI_DataAnalytics_Server?" promptNeeded="false" type="id_String" value="10.4.17.20"/>
+    <contextParameter comment="" name="OSI_DataAnalytics_AdditionalParams" prompt="OSI_DataAnalytics_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="OSI_DataAnalytics_Port" prompt="OSI_DataAnalytics_Port?" promptNeeded="false" type="id_String" value="1521"/>
+    <contextParameter comment="" name="OSI_DataAnalytics_Password" prompt="OSI_DataAnalytics_Password?" promptNeeded="false" type="id_Password" value="TqjEn78ZOEjMCIg/C4JK/A=="/>
+    <contextParameter comment="" name="OSI_DataAnalytics_Login" prompt="OSI_DataAnalytics_Login?" promptNeeded="false" type="id_String" value="Data_Analytics"/>
+    <contextParameter comment="" name="OSI_DataAnalytics_Schema" prompt="OSI_DataAnalytics_Schema?" promptNeeded="false" type="id_String" value="OSIBANK"/>
+    <contextParameter comment="" name="JOBDETAILS_Port" prompt="JOBDETAILS_Port?" promptNeeded="false" type="id_String" value="3709"/>
+    <contextParameter comment="" name="JOBDETAILS_ServiceName" prompt="JOBDETAILS_ServiceName?" promptNeeded="false" type="id_String" value="HDPDEV.WORLD"/>
+    <contextParameter comment="" name="JOBDETAILS_Server" prompt="JOBDETAILS_Server?" promptNeeded="false" type="id_String" value="10.7.61.5"/>
+    <contextParameter comment="" name="JOBDETAILS_Login" prompt="JOBDETAILS_Login?" promptNeeded="false" type="id_String" value="jobdetails"/>
+    <contextParameter comment="" name="JOBDETAILS_AdditionalParams" prompt="JOBDETAILS_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="JOBDETAILS_Schema" prompt="JOBDETAILS_Schema?" promptNeeded="false" type="id_String" value="JOBDETAILS"/>
+    <contextParameter comment="" name="JOBDETAILS_Password" prompt="JOBDETAILS_Password?" promptNeeded="false" type="id_Password" value="DOVXYQGUqVWsoaacvaY7ew=="/>
+    <contextParameter comment="" name="last_day" prompt="last_day?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Date" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="dev">
+    <contextParameter comment="" name="active_flag" prompt="active_flag?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="batch_id" prompt="batch_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
+    <contextParameter comment="" name="batch_name" prompt="batch_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="current_date" prompt="current_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="DEV"/>
+    <contextParameter comment="" name="error_description" prompt="error_description?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="etl_load_type" prompt="etl_load_type?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="etl_stage_name" prompt="etl_stage_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="failure_receiver_id" prompt="failure_receiver_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="insert_query_job_status" prompt="insert_query_job_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="insert_query_job_status_hist" prompt="insert_query_job_status_hist?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="inserted_count" prompt="inserted_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="last_status" prompt="last_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="load_date" prompt="load_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="max_date" prompt="max_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Date" value=""/>
+    <contextParameter comment="" name="max_date_columnname" prompt="max_date_columnname?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="max_row_key" prompt="max_row_key?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
+    <contextParameter comment="" name="max_row_key_columnname" prompt="max_row_key_columnname?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="min_date" prompt="min_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="origin" prompt="origin?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="parent_job_name" prompt="parent_job_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="receiver_mail_id" prompt="receiver_mail_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="records_processed_count" prompt="records_processed_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="records_read_count" prompt="records_read_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
+    <contextParameter comment="" name="row_count_checked" prompt="row_count_checked?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="select_query_jobcontrol" prompt="select_query_jobcontrol?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="sender_mail_id" prompt="sender_mail_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="source_query" prompt="source_query?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="status" prompt="status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="success_receiver_id" prompt="success_receiver_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="tablename" prompt="tablename?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="talend_log_file_path" prompt="talend_log_file_path?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="&quot;//athena/Departments/DigitalAnalytics/Dev/TalendLogs&quot;"/>
+    <contextParameter comment="" name="update_query_job_status" prompt="update_query_job_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="update_query_jobcontrol" prompt="update_query_jobcontrol?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="updated_count" prompt="updated_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Port" prompt="MSSQL_SVC_stage_EDW_Tgt_Port?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Server" prompt="MSSQL_SVC_stage_EDW_Tgt_Server?" promptNeeded="false" type="id_String" value="WEST-EDWDEVSQL"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Database" prompt="MSSQL_SVC_stage_EDW_Tgt_Database?" promptNeeded="false" type="id_String" value="DWAnalytics"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Schema" prompt="MSSQL_SVC_stage_EDW_Tgt_Schema?" promptNeeded="false" type="id_String" value="stg"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Password" prompt="MSSQL_SVC_stage_EDW_Tgt_Password?" promptNeeded="false" type="id_Password" value="QosSxYTlqHrVZJdnEL1aQspxmA4jxzqY"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Login" prompt="MSSQL_SVC_stage_EDW_Tgt_Login?" promptNeeded="false" type="id_String" value="svc-devtalend"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_AdditionalParams" prompt="MSSQL_SVC_stage_EDW_Tgt_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="OSI_DataAnalytics_ServiceName" prompt="OSI_DataAnalytics_ServiceName?" promptNeeded="false" type="id_String" value="FTFRPT3.WORLD"/>
+    <contextParameter comment="" name="OSI_DataAnalytics_Server" prompt="OSI_DataAnalytics_Server?" promptNeeded="false" type="id_String" value="10.4.17.20"/>
+    <contextParameter comment="" name="OSI_DataAnalytics_AdditionalParams" prompt="OSI_DataAnalytics_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="OSI_DataAnalytics_Port" prompt="OSI_DataAnalytics_Port?" promptNeeded="false" type="id_String" value="1521"/>
+    <contextParameter comment="" name="OSI_DataAnalytics_Password" prompt="OSI_DataAnalytics_Password?" promptNeeded="false" type="id_Password" value="TqjEn78ZOEjMCIg/C4JK/A=="/>
+    <contextParameter comment="" name="OSI_DataAnalytics_Login" prompt="OSI_DataAnalytics_Login?" promptNeeded="false" type="id_String" value="Data_Analytics"/>
+    <contextParameter comment="" name="OSI_DataAnalytics_Schema" prompt="OSI_DataAnalytics_Schema?" promptNeeded="false" type="id_String" value="OSIBANK"/>
+    <contextParameter comment="" name="JOBDETAILS_Port" prompt="JOBDETAILS_Port?" promptNeeded="false" type="id_String" value="3709"/>
+    <contextParameter comment="" name="JOBDETAILS_ServiceName" prompt="JOBDETAILS_ServiceName?" promptNeeded="false" type="id_String" value="HDPDEV.WORLD"/>
+    <contextParameter comment="" name="JOBDETAILS_Server" prompt="JOBDETAILS_Server?" promptNeeded="false" type="id_String" value="10.7.61.5"/>
+    <contextParameter comment="" name="JOBDETAILS_Login" prompt="JOBDETAILS_Login?" promptNeeded="false" type="id_String" value="jobdetails"/>
+    <contextParameter comment="" name="JOBDETAILS_AdditionalParams" prompt="JOBDETAILS_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="JOBDETAILS_Schema" prompt="JOBDETAILS_Schema?" promptNeeded="false" type="id_String" value="JOBDETAILS"/>
+    <contextParameter comment="" name="JOBDETAILS_Password" prompt="JOBDETAILS_Password?" promptNeeded="false" type="id_Password" value="DOVXYQGUqVWsoaacvaY7ew=="/>
+    <contextParameter comment="" name="last_day" prompt="last_day?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Date" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="prod">
+    <contextParameter comment="" name="active_flag" prompt="active_flag?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="batch_id" prompt="batch_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
+    <contextParameter comment="" name="batch_name" prompt="batch_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="current_date" prompt="current_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="PROD"/>
+    <contextParameter comment="" name="error_description" prompt="error_description?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="etl_load_type" prompt="etl_load_type?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="etl_stage_name" prompt="etl_stage_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="failure_receiver_id" prompt="failure_receiver_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="insert_query_job_status" prompt="insert_query_job_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="insert_query_job_status_hist" prompt="insert_query_job_status_hist?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="inserted_count" prompt="inserted_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="last_status" prompt="last_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="load_date" prompt="load_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="max_date" prompt="max_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Date" value=""/>
+    <contextParameter comment="" name="max_date_columnname" prompt="max_date_columnname?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="max_row_key" prompt="max_row_key?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
+    <contextParameter comment="" name="max_row_key_columnname" prompt="max_row_key_columnname?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="min_date" prompt="min_date?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="origin" prompt="origin?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="parent_job_name" prompt="parent_job_name?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="receiver_mail_id" prompt="receiver_mail_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="records_processed_count" prompt="records_processed_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="records_read_count" prompt="records_read_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value=""/>
+    <contextParameter comment="" name="row_count_checked" prompt="row_count_checked?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="select_query_jobcontrol" prompt="select_query_jobcontrol?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="sender_mail_id" prompt="sender_mail_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="source_query" prompt="source_query?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="status" prompt="status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="success_receiver_id" prompt="success_receiver_id?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="tablename" prompt="tablename?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="talend_log_file_path" prompt="talend_log_file_path?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value="&quot;//athena/Departments/DigitalAnalytics/Dev/TalendLogs&quot;"/>
+    <contextParameter comment="" name="update_query_job_status" prompt="update_query_job_status?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="update_query_jobcontrol" prompt="update_query_jobcontrol?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_String" value=""/>
+    <contextParameter comment="" name="updated_count" prompt="updated_count?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Port" prompt="MSSQL_SVC_stage_EDW_Tgt_Port?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Server" prompt="MSSQL_SVC_stage_EDW_Tgt_Server?" promptNeeded="false" type="id_String" value="WEST-EDWDEVSQL"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Database" prompt="MSSQL_SVC_stage_EDW_Tgt_Database?" promptNeeded="false" type="id_String" value="DWAnalytics"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Schema" prompt="MSSQL_SVC_stage_EDW_Tgt_Schema?" promptNeeded="false" type="id_String" value="stg"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Password" prompt="MSSQL_SVC_stage_EDW_Tgt_Password?" promptNeeded="false" type="id_Password" value="QosSxYTlqHrVZJdnEL1aQspxmA4jxzqY"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_Login" prompt="MSSQL_SVC_stage_EDW_Tgt_Login?" promptNeeded="false" type="id_String" value="svc-devtalend"/>
+    <contextParameter comment="" name="MSSQL_SVC_stage_EDW_Tgt_AdditionalParams" prompt="MSSQL_SVC_stage_EDW_Tgt_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="OSI_DataAnalytics_ServiceName" prompt="OSI_DataAnalytics_ServiceName?" promptNeeded="false" type="id_String" value="FTFRPT3.WORLD"/>
+    <contextParameter comment="" name="OSI_DataAnalytics_Server" prompt="OSI_DataAnalytics_Server?" promptNeeded="false" type="id_String" value="10.4.17.20"/>
+    <contextParameter comment="" name="OSI_DataAnalytics_AdditionalParams" prompt="OSI_DataAnalytics_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="OSI_DataAnalytics_Port" prompt="OSI_DataAnalytics_Port?" promptNeeded="false" type="id_String" value="1521"/>
+    <contextParameter comment="" name="OSI_DataAnalytics_Password" prompt="OSI_DataAnalytics_Password?" promptNeeded="false" type="id_Password" value="TqjEn78ZOEjMCIg/C4JK/A=="/>
+    <contextParameter comment="" name="OSI_DataAnalytics_Login" prompt="OSI_DataAnalytics_Login?" promptNeeded="false" type="id_String" value="Data_Analytics"/>
+    <contextParameter comment="" name="OSI_DataAnalytics_Schema" prompt="OSI_DataAnalytics_Schema?" promptNeeded="false" type="id_String" value="OSIBANK"/>
+    <contextParameter comment="" name="JOBDETAILS_Port" prompt="JOBDETAILS_Port?" promptNeeded="false" type="id_String" value="3709"/>
+    <contextParameter comment="" name="JOBDETAILS_ServiceName" prompt="JOBDETAILS_ServiceName?" promptNeeded="false" type="id_String" value="HDPDEV.WORLD"/>
+    <contextParameter comment="" name="JOBDETAILS_Server" prompt="JOBDETAILS_Server?" promptNeeded="false" type="id_String" value="10.7.61.5"/>
+    <contextParameter comment="" name="JOBDETAILS_Login" prompt="JOBDETAILS_Login?" promptNeeded="false" type="id_String" value="jobdetails"/>
+    <contextParameter comment="" name="JOBDETAILS_AdditionalParams" prompt="JOBDETAILS_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="JOBDETAILS_Schema" prompt="JOBDETAILS_Schema?" promptNeeded="false" type="id_String" value="JOBDETAILS"/>
+    <contextParameter comment="" name="JOBDETAILS_Password" prompt="JOBDETAILS_Password?" promptNeeded="false" type="id_Password" value="DOVXYQGUqVWsoaacvaY7ew=="/>
+    <contextParameter comment="" name="last_day" prompt="last_day?" promptNeeded="false" repositoryContextId="_rQJuEGHXEeeu8vo6pdarNw" type="id_Date" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="192"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value=""/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Dinesh_work/Talend-Studio-20170623_1246-V6.4.1/Talend-Studio-20170623_1246-V6.4.1/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_TestgFcqEea5A5Iy_Dc5WQ" name="DQTechnical"/>
+    <routinesParameter id="_TMjNkFcqEea5A5Iy_Dc5WQ" name="DataOperation"/>
+    <routinesParameter id="_TcBM8FcqEea5A5Iy_Dc5WQ" name="DataQuality"/>
+    <routinesParameter id="_TdXQwFcqEea5A5Iy_Dc5WQ" name="DqStringHandling"/>
+    <routinesParameter id="_TQHe8FcqEea5A5Iy_Dc5WQ" name="Mathematical"/>
+    <routinesParameter id="_TSDYoFcqEea5A5Iy_Dc5WQ" name="Numeric"/>
+    <routinesParameter id="_TTimYFcqEea5A5Iy_Dc5WQ" name="Relational"/>
+    <routinesParameter id="_Ta1hMFcqEea5A5Iy_Dc5WQ" name="SQLike"/>
+    <routinesParameter id="_TU4qMFcqEea5A5Iy_Dc5WQ" name="StringHandling"/>
+    <routinesParameter id="_TWX38FcqEea5A5Iy_Dc5WQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_TYAPoFcqEea5A5Iy_Dc5WQ" name="TalendDate"/>
+    <routinesParameter id="_TZfdYFcqEea5A5Iy_Dc5WQ" name="TalendString"/>
+    <routinesParameter id="_WYqmgJC2Ed62Pvbk19JsUg" name="Common"/>
+    <routinesParameter id="_WZtIVJC2Ed62Pvbk19JsUg" name="FundHoldings"/>
+    <routinesParameter id="_WZtIUJC2Ed62Pvbk19JsUg" name="Fund"/>
+    <routinesParameter id="_WZ25VJC2Ed62Pvbk19JsUg" name="Holding"/>
+    <routinesParameter id="_WamgMJC2Ed62Pvbk19JsUg" name="SecurityHolders"/>
+    <routinesParameter id="_WacvMJC2Ed62Pvbk19JsUg" name="Security"/>
+    <routinesParameter id="_Wa5bIJC2Ed62Pvbk19JsUg" name="TopTypes"/>
+    <routinesParameter id="_WbMWEJC2Ed62Pvbk19JsUg" name="XigniteFundHoldingsSoap12Stub"/>
+    <routinesParameter id="_Wbf4EJC2Ed62Pvbk19JsUg" name="XigniteFundHoldingsSoap_PortType"/>
+    <routinesParameter id="_Wa5bJJC2Ed62Pvbk19JsUg" name="XigniteFundHoldings"/>
+    <routinesParameter id="_8qwkYFjNEdyj6eiqDt60Og" name="DemoRoutines"/>
+    <routinesParameter id="_HKXfQGIZEd26GZmhFZLTPA" name="GetRandomPhoneNum"/>
+    <routinesParameter id="_IQV_EJ3oEeWly5zPCOmqOw" name="GetRandomTelNum"/>
+    <routinesParameter id="_G417gAc-EeKqOMQjhZ_0wQ" name="KeyManagementForSqoop"/>
+    <routinesParameter id="_9t7lgHaxEeWVzu9mKnskAQ" name="MyRoutineDemo"/>
+    <routinesParameter id="_GTqxQOHnEeWYYKq-0Kq9qQ" name="RemoveAscii"/>
+    <routinesParameter id="_VDNBwNHWEeWogaJLlP1UJA" name="test_char"/>
+    <routinesParameter id="_WZ25UJC2Ed62Pvbk19JsUg" name="Holder"/>
+    <routinesParameter id="_WaADQJC2Ed62Pvbk19JsUg" name="IdentifierTypes"/>
+    <routinesParameter id="_WaJ0QJC2Ed62Pvbk19JsUg" name="OutcomeTypes"/>
+    <routinesParameter id="_WawRMJC2Ed62Pvbk19JsUg" name="ShortFiling"/>
+    <routinesParameter id="_WbDMIJC2Ed62Pvbk19JsUg" name="XigniteFundHoldingsLocator"/>
+    <routinesParameter id="_WbWHEJC2Ed62Pvbk19JsUg" name="XigniteFundHoldingsSoap_BindingStub"/>
+    <routinesParameter id="_eQv-0Lj_Eee4k8uwDEJ0mg" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_MLuVgHQlEeWL3PwtkO-Wug"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;10.4.17.20&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;10.4.17.20&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;FTFRPT3.WORLD&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;FTFRPT3.WORLD&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;OSIBANK&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;Data_Analytics&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="9acwif+KXCR0lrxlVXxHSQ=="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;ACCTRATEHIST&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10; ACCTNBR&#13;&#10;,SUBACCTNBR&#13;&#10;,EFFDATE&#13;&#10;,INTRATE&#13;&#10;,INACTIVEDATE&#13;&#10;,DATELASTMAINT&#13;&#10;,TEASERRATEYN&#13;&#10;,CONVINDEXRATEUSED&#13;&#10;,CALCSCHEDEFFDATE&#13;&#10;,DELQRATEYN&#13;&#10;,DELQPENDINGRATE&#13;&#10;,POSTDATE&#13;&#10;,DISCLOSEDINTRATE&#13;&#10;,QUALIFIEDRATEADJ&#13;&#10;,QUALIFIEDNONADJUSTEDRATE&#13;&#10;FROM OSIBANK.ACCTRATEHIST&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="true"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="50000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCTNBR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUBACCTNBR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EFFDATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INTRATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INACTIVEDATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATELASTMAINT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEASERRATEYN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONVINDEXRATEUSED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALCSCHEDEFFDATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DELQRATEYN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DELQPENDINGRATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="POSTDATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISCLOSEDINTRATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUALIFIEDRATEADJ"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUALIFIEDNONADJUSTEDRATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_1">
+      <column comment="" defaultValue="" key="false" length="22" name="ACCTNBR" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="22" name="SUBACCTNBR" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="EFFDATE" nullable="false" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="INTRATE" nullable="true" pattern="" precision="7" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="INACTIVEDATE" nullable="true" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATELASTMAINT" nullable="false" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TEASERRATEYN" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="CONVINDEXRATEUSED" nullable="true" pattern="" precision="7" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CALCSCHEDEFFDATE" nullable="true" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="DELQRATEYN" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="DELQPENDINGRATE" nullable="true" pattern="" precision="7" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="POSTDATE" nullable="true" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="DISCLOSEDINTRATE" nullable="true" pattern="" precision="7" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="QUALIFIEDRATEADJ" nullable="true" pattern="" precision="7" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="QUALIFIEDNONADJUSTEDRATE" nullable="true" pattern="" precision="7" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_1zROsOzYEeeNo6_E7ETlJQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="stg_osi_acctratehist"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="lnd_ack_col_collateral" name="stg_pers_insert">
+      <column comment="" defaultValue="" key="false" length="22" name="ACCTNBR" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="22" name="SUBACCTNBR" nullable="false" pattern="" precision="0" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="EFFDATE" nullable="false" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="INTRATE" nullable="true" pattern="" precision="7" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="INACTIVEDATE" nullable="true" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATELASTMAINT" nullable="false" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TEASERRATEYN" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="CONVINDEXRATEUSED" nullable="true" pattern="" precision="7" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CALCSCHEDEFFDATE" nullable="true" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="DELQRATEYN" nullable="false" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="DELQPENDINGRATE" nullable="true" pattern="" precision="7" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="POSTDATE" nullable="true" pattern="" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="DISCLOSEDINTRATE" nullable="true" pattern="" precision="7" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="QUALIFIEDRATEADJ" nullable="true" pattern="" precision="7" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="QUALIFIEDNONADJUSTEDRATE" nullable="true" pattern="" precision="7" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Batch_Id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DW_LOAD_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="stg_pers_insert" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.ACCTNBR " name="ACCTNBR" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.SUBACCTNBR " name="SUBACCTNBR" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.EFFDATE " name="EFFDATE" type="id_Date"/>
+        <mapperTableEntries expression="row1.INTRATE " name="INTRATE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.INACTIVEDATE " name="INACTIVEDATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.DATELASTMAINT " name="DATELASTMAINT" type="id_Date"/>
+        <mapperTableEntries expression="row1.TEASERRATEYN " name="TEASERRATEYN" type="id_String"/>
+        <mapperTableEntries expression="row1.CONVINDEXRATEUSED " name="CONVINDEXRATEUSED" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.CALCSCHEDEFFDATE " name="CALCSCHEDEFFDATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.DELQRATEYN " name="DELQRATEYN" type="id_String"/>
+        <mapperTableEntries expression="row1.DELQPENDINGRATE " name="DELQPENDINGRATE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.POSTDATE " name="POSTDATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row1.DISCLOSEDINTRATE " name="DISCLOSEDINTRATE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.QUALIFIEDRATEADJ " name="QUALIFIEDRATEADJ" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.QUALIFIEDNONADJUSTEDRATE " name="QUALIFIEDNONADJUSTEDRATE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="context.batch_id" name="Batch_Id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate()" name="DW_LOAD_DATE" nullable="true" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="ACCTNBR" type="id_BigDecimal"/>
+        <mapperTableEntries name="SUBACCTNBR" type="id_BigDecimal"/>
+        <mapperTableEntries name="EFFDATE" type="id_Date"/>
+        <mapperTableEntries name="INTRATE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="INACTIVEDATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="DATELASTMAINT" type="id_Date"/>
+        <mapperTableEntries name="TEASERRATEYN" type="id_String"/>
+        <mapperTableEntries name="CONVINDEXRATEUSED" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="CALCSCHEDEFFDATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="DELQRATEYN" type="id_String"/>
+        <mapperTableEntries name="DELQPENDINGRATE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="POSTDATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="DISCLOSEDINTRATE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QUALIFIEDRATEADJ" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QUALIFIEDNONADJUSTEDRATE" nullable="true" type="id_BigDecimal"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMSSqlOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_1BOm4NLaEeaocKGFifZxhQ"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;wst-qedwsql&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;stg&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;DWAnalytics&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;Svc-qedwetl&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="MjwrSzIEj/Q2LCUwqIMHcJ3ZHfKcK1V1"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_osi_acctratehist&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="ACCTNBR"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_1BOm4NLaEeaocKGFifZxhQ - lnd_ack_col_collateral"/>
+    <elementParameter field="LABEL" name="NOTE" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACCTNBR"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUBACCTNBR"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EFFDATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INTRATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INACTIVEDATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATELASTMAINT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEASERRATEYN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONVINDEXRATEUSED"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CALCSCHEDEFFDATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DELQRATEYN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DELQPENDINGRATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="POSTDATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DISCLOSEDINTRATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUALIFIEDRATEADJ"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUALIFIEDNONADJUSTEDRATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Batch_Id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DW_LOAD_DATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="stg_osi_acctacctstathist"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="lnd_ack_col_collateral" name="tMSSqlOutput_1">
+      <column comment="" defaultValue="" key="false" length="22" name="ACCTNBR" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="22" name="SUBACCTNBR" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="EFFDATE" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="INTRATE" nullable="true" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="INACTIVEDATE" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATELASTMAINT" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TEASERRATEYN" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="CONVINDEXRATEUSED" nullable="true" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CALCSCHEDEFFDATE" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="DELQRATEYN" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="DELQPENDINGRATE" nullable="true" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="POSTDATE" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="DISCLOSEDINTRATE" nullable="true" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="QUALIFIEDRATEADJ" nullable="true" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="QUALIFIEDNONADJUSTEDRATE" nullable="true" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Batch_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DW_LOAD_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="lnd_ack_col_collateral" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="22" name="ACCTNBR" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="22" name="SUBACCTNBR" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="EFFDATE" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="INTRATE" nullable="true" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="INACTIVEDATE" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DATELASTMAINT" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TEASERRATEYN" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="CONVINDEXRATEUSED" nullable="true" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CALCSCHEDEFFDATE" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="DELQRATEYN" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="DELQPENDINGRATE" nullable="true" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="POSTDATE" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="DISCLOSEDINTRATE" nullable="true" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="QUALIFIEDRATEADJ" nullable="true" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="QUALIFIEDNONADJUSTEDRATE" nullable="true" pattern="" precision="7" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Batch_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DW_LOAD_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="ACCTNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ACCTROLECD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EFFDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERSNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INACTIVEDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATELASTMAINT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LOANLBLTYPCT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LOANLBLTYAMT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="stg_pers_insert" lineStyle="0" metaname="stg_pers_insert" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMSSqlOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="CollateralId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SourceIdentifier"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SourceIdentifierDescription"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CollateralTypeId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IsForSale"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DateTransferredToOREO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ShortDescription1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ShortDescription2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ShortDescription3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ShortDescription4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ModifiedById"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CreatedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CreatedById"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DateAcquired"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CollateralValue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CompanyId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SourceId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CollateralCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CollateralDescription"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InsuranceCompany"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InsuranceDescription"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PledgeAmount"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PrimaryInsuranceCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchaseDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurchasePrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TaxCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ValuationAmount"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ValuationDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccountNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccountTitle"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AddressLine1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AddressLine2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AddressLine3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AppraisValue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AssociationCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BoxNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CensusTract"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CertificateNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ChangeSinceLastReoValuation"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ChangeSinceReoAcquired"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="City"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CityCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CollateralDescription2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CollateralDescription3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CollateralHoldAmount"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CollateralHoldReasonCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CollateralTypeDescription"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CollateralValueDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Color"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Country"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="County"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CreditLife"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUSIP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DealerCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DealerContactName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DealerName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DealerPrivate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DeedUponSaleReceiptDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="District"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FinancialInstitutionName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FirstSecMortgFlag"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FloodCommunityNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FloodPanelNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FNMAPropertyTypeId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GAPInsurance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HazardInsuranceCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InspectionDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InspectionExpirationDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Insurance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InsuranceAgentName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InsuranceAgentPhoneNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InsuranceCancelDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InsuranceExpirationDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InsuranceInceptionDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InsurancePolicyNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IsFloodRequired"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IsFloodZone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FloodZoneDescription"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IsTaxesPaid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastRepriceDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastRepriceValue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LicensePlateNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LocationCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Make"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MapEffectiveDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MarginPercentage"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Mileage"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Miscellaneous1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Miscellaneous2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Miscellaneous3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Miscellaneous4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Model"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NewUsed"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Notes"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NumberOfUnits"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Occupancy"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OccupancyCodeDescription"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OccupancyCodeId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OriginalAppraisalDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OriginalPropertyValue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OriginalValue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ParcelNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PlanName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PlatNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PlatPage"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PlatSection"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="POBox"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PoolCollateralNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PoolValue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PostalCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ProductTypeId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PropertyAddress"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PropertyBuiltYear"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PropertyNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PropertyTypeId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PropertyTypeDescription"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PurposeCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RealtorBuilderCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RedemptionExpirationDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RegistrationNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RetailValue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RRNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SecurityName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SecurityTypeId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SMSACode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="StartingValuationForReoGainOrLoss"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="State"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="StateOfRegistration"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="StreetDirection"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="StreetName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="StreetNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SubModel"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SuiteNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TaxValue"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TickerSymbol"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TsgConvertedToOwnersPolicyDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UnitNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UnitPrice"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Usage"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VacancyFirstKnownDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VacantPropertyFlag"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VaultReceiptNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VehicleTypeId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Year"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="batch_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="account_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GRADDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CRCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RPT1042SYN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VALIDYN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRIVACYYN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LASTNAMEUPPER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LASTNAMESNDX"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OCCPTNCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FIRSTNAMESNDX"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NICKNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PURGEYN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FIRSTNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EDUCLEVCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OWNRENT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MAILTYPCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RESTAXCTRYCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TAXID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SALUCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FRGNCERTEXPDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERSNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CREDITREPORTCONSINFOCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FIRSTNAMEUPPER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATELASTMAINT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADDDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATETAXCERT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SPOUSEPERSNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATETAXIDAPPLY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SUFFIX"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATEDEATH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NBRDEPND"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PREFCULTURECD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUSTKEYWORD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SHORTNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MDLINIT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INCOMELEVCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATEBIRTH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MDLNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LASTNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Batch_Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DW_LOAD_DATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MEMBERGROUPDESC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MEMBERGROUPCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRIMARYPERSNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MEMBERAGREENBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NEXTSUFFIXNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRIMARYORGNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SHAREACCTNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BRANCHORGNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HOLDSUBACCTNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NEXTBANKCHECKNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ACCTPPAYYN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RETIREMENTYN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MAILADDRUSECD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TAXRPTFORSIGYN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DRAWYN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CURRMIACCTTYPCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NEXTSTOPPMTREQNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATELASTCONTACT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LASTRTXNPURGETODATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RPTPTSYN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ADDRFORMATCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MJACCTTYPCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CURRTERM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BANKORGNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CLOSEREASONCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RPT1098YN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STMTACCTNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PASSBOOKYN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ACTIVEACCTCLASSNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HOLDACCTNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORIGTERM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CONTRACTDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NEXTPPAYITEMNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ACCTNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OPENFUNDSOURCECD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ESCHEATDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STMTACCTYN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TAXRPTFORPERSNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STANDARDACCTCLASSNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ASSIGNEDACCTNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CURRACCTSTATCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OWNCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TRANSACTIONACCTYN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NEXTSUBNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATECONVERTED"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HSASRCCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TAXRPTFORORGNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ANALYSISYN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ACCTDESC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATEMAT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MAXOVERDRAFTLIMIT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NEXTRTXNNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TAXRPTFOROWNYN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NCUACATCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ESCHEATYN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INACTIVEDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LOANLBLTYAMT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LOANLBLTYPCT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EFFDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ACCTROLECD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="POSTDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TIMEUNIQUEEXTN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ACCTSTATCD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EFFDATETIME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SUBACCTNBR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DELQRATEYN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DELQPENDINGRATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INTRATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUALIFIEDRATEADJ"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TEASERRATEYN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUALIFIEDNONADJUSTEDRATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DISCLOSEDINTRATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CALCSCHEDEFFDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CONVINDEXRATEUSED"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="stg_pers_insert"/>
+  </connection>
+  <note opaque="true" posX="224" posY="-192" sizeHeight="64" sizeWidth="481" text="Load STG_OSI_ACCTRATEHIST from OSI to EDW STG">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="225;225;135"/>
+    <elementParameter field="TEXT" name="FONT_SIZE" value="9"/>
+  </note>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fb416325-c7b2-42a4-9328-58f719123ff2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Pcf64VzfxAavSjx+rK204dDkv3t5ZGeEzxjyvSkiiKEJuawAr/BKBA2uTEpZn424A5b7T4c5F+eo
+DnSBQr+LhQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_66ca2ce4-71f1-48aa-a95a-0dc411995b9f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vHFY42HRfqhY1m7NQZYH3fvUKLO9KTkps0mLAsScHyCaWR8XQXf73pagCYIyCCrJXU0bnLwsObKW
+W9LNcvTZTw==</DigestValue></Reference></SignedInfo><SignatureValue>Hu6pP2RycrZKiyaSaRvLI2wKAGx15Dtu2p93itSCcALZva4Xs0qTUOC2en2VoWUmb231gEjQEtdA
+w4D5FAs9HfAks5jCedBB9V8MX/BJnaap5l27+6yhCqE6QBuxQ3eYN+xXU/6GgWUC0fithLUaNBsu
+VXOIL0ATr4jTd5QyFwRE1qkMQPSd2UBf8WOqtaSHCvskWC2aRUzxhsLw4YV7ehPQ5tHZg68ltWWG
+5qW2fKp+oDyU5fAqgu6uchcXLUQxiH9wEej7NB0cokQw4MfgqfLrqaWuOonrdOqyEV1apF1DSdC9
+W/+enNSlzDKYPH/ZBKAdQYXFT651FM7ItwSTnA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_66ca2ce4-71f1-48aa-a95a-0dc411995b9f" Target="#_fb416325-c7b2-42a4-9328-58f719123ff2"><Timestamp>2018-10-24 00:38:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

@@ -14,6 +14,7 @@
     <module>jobs/process/drools_test_in_newre_0.1</module>
     <module>jobs/process_storm/teststreaming_0.1</module>
     <module>jobs/process_storm/test2_0.1</module>
+    <module>jobs/process/JulyRelease2/Vrinda_Dev/Cogent/Source_to_Stage/copy_of_j_dly_osi_stg_acctratehist_0.2</module>
   </modules>
   <properties>
     <talend.project.name>TEST</talend.project.name>
